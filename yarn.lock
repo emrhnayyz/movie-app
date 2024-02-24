@@ -1836,6 +1836,18 @@
     protobufjs "^7.2.4"
     yargs "^17.7.2"
 
+"@headlessui/vue@^1.7.19":
+  version "1.7.19"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.7.19.tgz#c128504afc14c5a85e2bedd59370a6a461b7c669"
+  integrity sha512-VFjKPybogux/5/QYGSq4zgG/x3RcxId15W8uguAJAjPBxelI23dwjOjTx/mIiMkM/Hd3rzFxcf2aIp56eEWRcA==
+  dependencies:
+    "@tanstack/vue-virtual" "^3.0.0-beta.60"
+
+"@heroicons/vue@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-2.1.1.tgz#76299d6607a7a1164e3e06a037d7cf721c53b223"
+  integrity sha512-Yi5nh/89L193ALgHyJUQUdNLsKXPrrE3yj5yiR8WAlo7nZyXGxGauQcEAmBsa2XJGMhBMuEdoOiuZ8wEwTBxVQ==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -2563,6 +2575,18 @@
     "@svgr/plugin-jsx" "^5.5.0"
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
+
+"@tanstack/virtual-core@3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.1.2.tgz#ca76f28f826fbd3310f88c3cd355d9c4aba80abb"
+  integrity sha512-DATZJs8iejkIUqXZe6ruDAnjFo78BKnIIgqQZrc7CmEFqfLEN/TPD91n4hRfo6hpRB6xC00bwKxv7vdjFNEmOg==
+
+"@tanstack/vue-virtual@^3.0.0-beta.60":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@tanstack/vue-virtual/-/vue-virtual-3.1.2.tgz#828270573d94bef32d13aa90b189ac4bbb1d0dc0"
+  integrity sha512-RmUnhsFtRw9p4Ti/+rG2Hr3y4yFhs8Xdsn7x9tkPoKINbVya/5RSCoNUCCAg2iXNjOI5a55iBNzNV0SVwxMwKA==
+  dependencies:
+    "@tanstack/virtual-core" "3.1.2"
 
 "@tootallnate/once@1":
   version "1.1.2"

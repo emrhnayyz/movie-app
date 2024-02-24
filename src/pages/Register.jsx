@@ -59,8 +59,14 @@ const Register = () => {
             />
             <label htmlFor="password">Password</label>
           </div>
-          <button type="submit">Register</button>
-          <button type="button">
+          <button className="btn-danger" type="submit">
+            Register
+          </button>
+          <button
+            className="btn-danger flex justify-between items-center"
+            type="button"
+            
+          >
             Continue with Google
             <GoogleIcon color="currentColor" />
           </button>
