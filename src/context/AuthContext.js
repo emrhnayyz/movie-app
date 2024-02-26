@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React from 'react'
 import { auth } from '../auth/firebase';
+import { toastErrorNotify, toastSuccessNotify } from '../helpers/ToastNotify';
 
 
 const { createContext } = require("react");
@@ -18,12 +19,14 @@ const AuthContextProvider = ({ children }) => {
             let userCredidental = await createUserWithEmailAndPassword(
                 auth,
                 email,
-                password)
-    
+                password
+            );
+            toastSuccessNotify("Registered Succesfully")
             console.log(userCredidental);
             
         } catch (error) {
             console.log(error);
+            toastErrorNotify(error.message)
         }
         
         
