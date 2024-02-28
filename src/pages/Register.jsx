@@ -5,13 +5,16 @@ import { AuthContex } from "../context/AuthContext";
 const Register = () => {
 
   const [email, setEmail] = useState();
-  const [password, setPassword] = useState()
-  const { createUser } = useContext(AuthContex);
+  const [password, setPassword] = useState();
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const { createUser, signUpProvider } = useContext(AuthContex);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    createUser(email, password)
-  }
+    e.preventDefault();
+    const displayName = `${firstName} ${lastName}`;
+    createUser(email, password, displayName);
+  };
 
 
   return (
@@ -32,6 +35,7 @@ const Register = () => {
               className="peer"
               placeholder=" "
               required
+              onChange={(e) => setFirstName(e.target.value)}
 
             />
             <label htmlFor="firstName">First Name</label>
@@ -44,7 +48,7 @@ const Register = () => {
               className="peer"
               placeholder=" "
               required
-
+              onChange={(e) => setLastName(e.target.value)}
             />
             <label htmlFor="lastName">Last Name</label>
           </div>
