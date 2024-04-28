@@ -8,7 +8,7 @@ const Register = () => {
   const [password, setPassword] = useState();
   const [firstName, setFirstName] = useState();
   const [lastName, setLastName] = useState();
-  const { createUser, signUpProvider } = useContext(AuthContex);
+  const { createUser } = useContext(AuthContex);
 
   const handleSubmit = (e) => {
     e.preventDefault();
